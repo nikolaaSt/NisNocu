@@ -1,0 +1,14 @@
+.my-carousel {
+  margin: 20px auto;
+}
+
+.slide {
+  height: 200px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 900px) {
+  .slide {
+    width: 200px;
+  }
+}

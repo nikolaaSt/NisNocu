@@ -1,0 +1,27 @@
+.title {
+  font-size: 25px;
+}
+
+.button2 {
+  margin-top: 9px;
+  margin-bottom: 8px;
+  width: 60%;
+  font-size: 18px;
+}
+
+.remember {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: blue;
+}

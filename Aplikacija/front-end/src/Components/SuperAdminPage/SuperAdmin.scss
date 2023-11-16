@@ -1,0 +1,64 @@
+.superadmin {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.place__content_sadmin {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #45a29e;
+}
+
+.content__nav {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #1f2833;
+}
+
+.content__nav-item:hover {
+    background-color: #66fcf1;
+    transition: linear 0.25s;
+}
+
+.content__nav-item p {
+    margin-bottom: 2px !important;
+    margin-top: 1px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.addbtn {
+    background-color: #1f2833;
+    color: white;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.content__nav-item.active {
+    background-color: #45a29e;
+    cursor: default;
+}
+
+.addbtn p {
+    margin-bottom: 2px !important;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.addbtn:enabled:hover {
+    background: linear-gradient(0deg, rgba(69, 162, 158, 1) 50%, rgba(64, 147, 144, 1) 56%, rgba(54, 113, 115, 1) 69%, rgba(43, 79, 86, 1) 84%, rgba(31, 40, 51, 1) 100%);
+    transition: linear 0.25s;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: 500;
+}

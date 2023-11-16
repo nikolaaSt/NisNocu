@@ -1,0 +1,343 @@
+.box {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.pocetna_kartica {
+  //display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: space-between;
+  background-color: #c5c6c7;
+  box-shadow: 0 8px 11px 0 rgba(203, 203, 203, 0.378),
+    0 5px 20px 0 rgba(207, 207, 207, 0.188);
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.calendar-container,
+.event-list-container {
+  width: 100%;
+}
+
+.event-list-items {
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0px 60px;
+}
+
+.card-body {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.react-calendar {
+  max-width: 700px;
+  background-color: #c5c6c7;
+  color: #222;
+  margin: auto;
+  margin: 15px;
+  padding-left: 8px;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  height: 58px;
+}
+
+.react-calendar__navigation button {
+  color: white;
+  min-width: 44px;
+  background: #1f2833;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+}
+
+.react-calendar__navigation button span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #45a29e;
+  transition: linear 0.25s;
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__month-view__weekdays {
+  margin-top: 12px;
+  // color: white;
+  // background-color: #1f2833;
+  // padding-top: 5px;
+  // padding-bottom: 8px;
+  // border: grey solid 1px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  //flex: 0 0 14.5% !important;
+  color: white;
+  background-color: #1f2833;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  border: grey solid 1px;
+}
+
+abbr[title] {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 5fr) !important;
+  //gap: 15px;
+  //margin-left: 3px;
+}
+
+.react-calendar__month-view__days button {
+  //border-radius: 50%;
+  //margin-top: 3px;
+  //margin-bottom: 3px;
+  padding: 20px;
+  flex: none !important;
+  //padding: 10px;
+}
+
+.react-calendar__tile {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #45a29e;
+  color: white;
+  transition: linear 0.25s;
+}
+
+.react-calendar__tile--now {
+  background: #1f2833;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background: #45a29e;
+  color: white;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+  font-weight: 200;
+  border-color: #a3a3a3;
+}
+
+.cardevent {
+  //background-color: #1f2833;
+  background: rgb(31, 40, 51);
+  background: linear-gradient(
+    0deg,
+    rgba(31, 40, 51, 1) 42%,
+    rgba(43, 79, 86, 1) 78%,
+    rgba(54, 113, 115, 1) 98%,
+    rgba(69, 162, 158, 1) 100%
+  );
+  color: white;
+  margin: 12px 5px 10px 5px;
+  padding-top: 2px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.cardevent:hover {
+  //background-color: #45a29e;
+  background: rgb(69, 162, 158);
+  background: linear-gradient(
+    0deg,
+    rgba(69, 162, 158, 1) 50%,
+    rgba(64, 147, 144, 1) 56%,
+    rgba(54, 113, 115, 1) 69%,
+    rgba(43, 79, 86, 1) 84%,
+    rgba(31, 40, 51, 1) 100%
+  );
+  transition: linear 0.25s;
+}
+
+.localname p {
+  margin: auto;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.time {
+  margin: auto;
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.button4 {
+  background-color: #1f2833;
+  font-size: 19px;
+  padding: 8px;
+  border-radius: 15px;
+  margin: auto !important;
+}
+
+.button4 p {
+  font-weight: 500;
+  margin: 2px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.button4:enabled:hover {
+  background-color: #45a29e;
+  transition: linear 0.25s;
+}
+
+.stack-col {
+  display: flex;
+  flex-direction: row;
+  gap: 15px !important;
+}
+
+.text {
+  background-color: whitesmoke;
+  border-radius: 4px;
+  border: solid;
+  border-width: 1px;
+  padding: 5px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+  margin: auto;
+}
+
+.css-ahj2mt-MuiTypography-root {
+  font-size: 19px !important;
+}
+
+.opis {
+  padding: 5px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.svg-inline--fa {
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    width: 95%;
+  }
+
+  .pocetna_kartica {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .event-list-items {
+    display: block;
+    flex-grow: 1;
+    padding: 0px;
+  }
+
+  .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .card-body {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .react-calendar {
+    margin: auto;
+    margin: 10px;
+    margin-left: 5px;
+  }
+
+  .react-calendar__navigation {
+    display: flex;
+    height: 58px;
+  }
+
+  .react-calendar__navigation button {
+    font-weight: 500;
+    font-size: 13px;
+    min-width: 44px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .react-calendar__month-view__days button {
+    padding: 15px;
+  }
+
+  .react-calendar__navigation__arrow {
+    font-size: 25px;
+  }
+
+  .react-calendar__navigation__next-button {
+    font-size: 25px;
+  }
+}
